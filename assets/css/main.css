@@ -3258,8 +3258,8 @@ input, select, textarea {
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background-color: #212931;
-			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg");
+			background-color: #4a3625;
+			background-image: url("../../images/overlay.png"), linear-gradient(180deg, rgba(120, 75, 35, 0.35), rgba(60, 40, 25, 0.55)), url("../../images/bg.jpg");
 			background-size: auto,								auto,														100% auto;
 			background-position: center,								center,														top center;
 			background-repeat: repeat,								no-repeat,													no-repeat;
@@ -4750,3 +4750,13 @@ input, select, textarea {
 		}
 
 	}
+/* logo-en */
+#header .logo .en{display:block;font-size:.8em;letter-spacing:.14em;margin-bottom:.15em;text-transform:none}
+
+/* date-line-fix */
+header.major > .date:before{width:calc(50% - 8.5rem) !important}
+header.major > .date:after{width:calc(50% - 8.5rem) !important}
+
+/* pub-accent */
+#main>.post header.major h3, #main>.post header.major h1{color:#d98b19}
+#publications p b, #novel p b{color:#d98b19}
