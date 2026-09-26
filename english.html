@@ -17,6 +17,25 @@
     <noscript
       ><link rel="stylesheet" href="assets/css/noscript.css"
     /></noscript>
+  <style id="footer-style">
+#footer .split.contact section>*{width:auto !important;flex:none !important}
+#footer .split.contact section{display:block !important}
+.contact-table{display:table;width:100%;max-width:26rem;margin:0 auto}
+.contact-table-row{display:table-row}
+.contact-table .col-text,.contact-table .col-icons{display:table-cell;vertical-align:middle}
+.contact-table .col-text{text-align:right;width:70%}
+.contact-table .col-icons{text-align:left;width:30%}
+.contact-unified p{margin:0 0 .5rem;font-size:1.15rem}
+.contact-unified p:last-child{margin-bottom:0}
+.contact-unified strong{color:#d98b19;margin-inline-end:.4em}
+.social-row{display:flex !important;gap:1rem;justify-content:flex-start}
+.social-row a{width:2.75rem;height:2.75rem;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff !important;font-size:1.2rem;text-decoration:none;transition:transform .15s}
+.social-row a:hover{transform:translateY(-3px)}
+.social-row a.li{background:#0077b5}
+.social-row a.fb{background:#1877f2}
+.social-row a.wa{background:#25d366}
+body{background:linear-gradient(180deg,#4a3c30 0%,#6b5138 55%,#8a6a45 100%)}
+</style>
   <style id="cls-style">
 .cls .date h2{position:relative;z-index:1;background:#fff;padding:0 1.5rem;display:inline-block}
 .cls-wrap{overflow-x:auto;margin:1.2rem 0}
@@ -39,7 +58,7 @@
       <!-- Nav -->
       <nav id="nav">
         <ul class="links">
-          <li><a href="index.html#about">אודות</a></li>
+          <li><a href="index.html#about">Author Bio</a></li>
           <li><a href="index.html#publications">פרסומים</a></li>
           <li><a href="index.html#novel">נובלה גרפית</a></li>
           <li class="active"><a href="english.html">אנגלית</a></li>
@@ -68,7 +87,7 @@
 <strong> לבירור רמה והרשמה לחצו על הקישורים המתאימים:</strong>
 </p>
 <div class="cls-wrap"><table class="cls-table"><thead><tr><th>רמה</th><th>תוכן</th><th>כיתות</th><th>יום ושעה</th></tr></thead><tbody>
-<tr><td><a href="https://forms.gle/Li2XtgBzAVUFrGcR7" target="_blank">*ADVANCED</a></td><td><a href="https://forms.gle/Li2XtgBzAVUFrGcR7" target="_blank">דיבור שוטף + קריאה מתקדמת</a></td><td><a href="https://forms.gle/Li2XtgBzAVUFrGcR7" target="_blank">כיתות ד-ו</a></td><td><a href="https://forms.gle/Li2XtgBzAVUFrGcR7" target="_blank">ראשון 14:45-15:30</a></td></tr>
+<tr><td><a href="https://forms.gle/Li2XtgBzAVUFrGcR7" target="_blank">*ADVANCED</a></td><td><a href="https://forms.gle/Li2XtgBzAVUFrGcR7" target="_blank">דיבור שוטף + קריאה מתקדמת</a></td><td><a href="https://forms.gle/Li2XtgBzAVUFrGcR7" target="_blank">כיתות ד-ו</a></td><td><a href="https://forms.gle/Li2XtgBzAVUFrGcR7" target="_blank">ראשון 18:00-18:45</a></td></tr>
 <tr><td><a href="https://forms.gle/VgSkKkmtMvXVvyjL9" target="_blank">INTERMEDIATE</a></td><td><a href="https://forms.gle/VgSkKkmtMvXVvyjL9" target="_blank">שיחות קצרות + משפטים ופסקאות</a></td><td><a href="https://forms.gle/VgSkKkmtMvXVvyjL9" target="_blank">כיתות ג-ה</a></td><td><a href="https://forms.gle/VgSkKkmtMvXVvyjL9" target="_blank">ראשון 15:30-16:15</a></td></tr>
 <tr><td><a href="https://forms.gle/xANJCjtYHiZApKzq8" target="_blank">BEGINNERS</a></td><td><a href="https://forms.gle/xANJCjtYHiZApKzq8" target="_blank">ראשית דיבור + אותיות ומילים</a></td><td><a href="https://forms.gle/xANJCjtYHiZApKzq8" target="_blank">א-ג</a></td><td><a href="https://forms.gle/xANJCjtYHiZApKzq8" target="_blank">ראשון 17:15-18:00</a></td></tr>
 <tr><td><a href="https://forms.gle/aUg2kcYDvJ28vaN16" target="_blank">*ALL LEVELS</a></td><td><a href="https://forms.gle/aUg2kcYDvJ28vaN16" target="_blank">התעמלות באנגלית</a></td><td><a href="https://forms.gle/aUg2kcYDvJ28vaN16" target="_blank">גן חובה-כיתה ו</a></td><td><a href="https://forms.gle/aUg2kcYDvJ28vaN16" target="_blank">ראשון 16:30-17:15</a></td></tr>
@@ -91,16 +110,21 @@
       <footer id="footer">
         <section class="split contact">
           <section>
-            <h3>טלפון</h3>
-            <p><a href="tel:0528335872">052-8335872</a></p>
-          </section>
-          <section>
-            <h3>אימייל</h3>
-            <p>
-              <a href="mailto:meirav.seifert@gmail.com"
-                >meirav.seifert@gmail.com</a
-              >
-            </p>
+            <div class="contact-table">
+              <div class="contact-table-row">
+                <div class="col-text contact-unified">
+                  <p><strong>טלפון</strong> 052-8335872</p>
+                  <p><strong>אימייל</strong> meirav.seifert@gmail.com</p>
+                </div>
+                <div class="col-icons">
+                  <div class="social-row">
+                    <a href="https://wa.me/972528335872" target="_blank" rel="noopener" class="wa" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/the.english.coach.tel.aviv/" target="_blank" rel="noopener" class="fb" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/meiravseifert/" target="_blank" rel="noopener" class="li" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </section>
         </section>
         <section>

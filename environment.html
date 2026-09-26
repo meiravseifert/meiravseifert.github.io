@@ -17,6 +17,25 @@
     <noscript
       ><link rel="stylesheet" href="assets/css/noscript.css"
     /></noscript>
+  <style id="footer-style">
+#footer .split.contact section>*{width:auto !important;flex:none !important}
+#footer .split.contact section{display:block !important}
+.contact-table{display:table;width:100%;max-width:26rem;margin:0 auto}
+.contact-table-row{display:table-row}
+.contact-table .col-text,.contact-table .col-icons{display:table-cell;vertical-align:middle}
+.contact-table .col-text{text-align:right;width:70%}
+.contact-table .col-icons{text-align:left;width:30%}
+.contact-unified p{margin:0 0 .5rem;font-size:1.15rem}
+.contact-unified p:last-child{margin-bottom:0}
+.contact-unified strong{color:#d98b19;margin-inline-end:.4em}
+.social-row{display:flex !important;gap:1rem;justify-content:flex-start}
+.social-row a{width:2.75rem;height:2.75rem;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff !important;font-size:1.2rem;text-decoration:none;transition:transform .15s}
+.social-row a:hover{transform:translateY(-3px)}
+.social-row a.li{background:#0077b5}
+.social-row a.fb{background:#1877f2}
+.social-row a.wa{background:#25d366}
+body{background:linear-gradient(180deg,#4a3c30 0%,#6b5138 55%,#8a6a45 100%)}
+</style>
   <style id="env-style">
 .env{--g:#d98b19;--gl:#fbf1e0}
 .env p{font-size:1.2rem;line-height:1.5;margin:0 0 1rem;text-align:right}
@@ -65,9 +84,9 @@ body.page-env #header .logo{display:none}
 .ph.wide{flex:0 0 13rem;width:13rem;height:13rem;margin:0;font-size:4.4rem;line-height:1.15}
 .env-two .env-row{margin-bottom:0;gap:1.2rem;align-items:flex-start}
 .env-two{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
-@media(max-width:736px){.env-row{gap:1rem}.ph{flex:0 0 6rem;height:6rem;font-size:1.3rem}.env-two{grid-template-columns:1fr}.ph.wide{flex:0 0 7.5rem;width:7.5rem;height:7.5rem;font-size:2.8rem}
 .env-hero{margin:0 0 1.5rem}
-.env-hero img{width:100%;max-height:26rem;object-fit:cover;border-radius:.6rem;display:block}.env-grid{grid-template-columns:minmax(5.5rem,1fr) 2.5fr}.env-grid>*{padding:.6rem .7rem;font-size:.9rem}}
+.env-hero img{width:100%;max-height:26rem;object-fit:cover;border-radius:.6rem;display:block}
+@media(max-width:736px){.env-row{gap:1rem}.ph{flex:0 0 6rem;height:6rem;font-size:1.3rem}.env-two{grid-template-columns:1fr}.ph.wide{flex:0 0 7.5rem;width:7.5rem;height:7.5rem;font-size:2.8rem}.env-grid{grid-template-columns:minmax(5.5rem,1fr) 2.5fr}.env-grid>*{padding:.6rem .7rem;font-size:.9rem}}
 </style>
   </head>
   <body class="is-preload page-env">
@@ -81,7 +100,7 @@ body.page-env #header .logo{display:none}
       <!-- Nav -->
       <nav id="nav">
         <ul class="links">
-          <li><a href="index.html#about">אודות</a></li>
+          <li><a href="index.html#about">Author Bio</a></li>
           <li><a href="index.html#publications">פרסומים</a></li>
           <li><a href="index.html#novel">נובלה גרפית</a></li>
           <li><a href="english.html">אנגלית</a></li>
@@ -95,7 +114,7 @@ body.page-env #header .logo{display:none}
         <section class="post env" id="environment">
           <header class="major" style="margin-bottom: 0.5rem;">
             <span class="date"><h2>חוג סביבה ויזמות</h2></span>
-            <div class="env-logos"><img src="images/logos/tlv-municipality.svg" alt="עיריית תל אביב-יפו"><img src="images/logos/imahot-lo-ogrot.jpeg" alt="אמהות לא אוגרות"></div>
+            <div class="env-logos"><img src="images/logos/tlv-municipality.png" alt="עיריית תל אביב-יפו"><img src="images/logos/imahot-lo-ogrot.jpeg" alt="אמהות לא אוגרות"></div>
             <h3 class="env-accent">מרכז הקיימות העירוני בדיזינגוף סנטר בשיתוף עם אמהות לא אוגרות</h3>
           </header>
           <div class="env-reg"><a href="https://live.payme.io/subscription/template/SUB17883-58142MN1-KOSO9SAZ-HWN52K7R" target="_blank" rel="noopener">הרשמה א-ב</a><a href="https://live.payme.io/subscription/template/SUB17883-582368JC-UVORYYXO-ONS02UDH" target="_blank" rel="noopener">הרשמה ג-ד</a><a href="https://live.payme.io/subscription/template/SUB17883-58142MN1-KOSO9SAZ-HWN52K7R" target="_blank" rel="noopener">הרשמה ה-ו</a></div>
@@ -137,16 +156,21 @@ body.page-env #header .logo{display:none}
       <footer id="footer">
         <section class="split contact">
           <section>
-            <h3>טלפון</h3>
-            <p><a href="tel:0528335872">052-8335872</a></p>
-          </section>
-          <section>
-            <h3>אימייל</h3>
-            <p>
-              <a href="mailto:meirav.seifert@gmail.com"
-                >meirav.seifert@gmail.com</a
-              >
-            </p>
+            <div class="contact-table">
+              <div class="contact-table-row">
+                <div class="col-text contact-unified">
+                  <p><strong>טלפון</strong> 052-8335872</p>
+                  <p><strong>אימייל</strong> meirav.seifert@gmail.com</p>
+                </div>
+                <div class="col-icons">
+                  <div class="social-row">
+                    <a href="https://wa.me/972528335872" target="_blank" rel="noopener" class="wa" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/the.english.coach.tel.aviv/" target="_blank" rel="noopener" class="fb" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/meiravseifert/" target="_blank" rel="noopener" class="li" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </section>
         </section>
         <section>

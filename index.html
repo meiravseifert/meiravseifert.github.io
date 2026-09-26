@@ -17,6 +17,25 @@
     <noscript
       ><link rel="stylesheet" href="assets/css/noscript.css"
     /></noscript>
+  <style id="footer-style">
+#footer .split.contact section>*{width:auto !important;flex:none !important}
+#footer .split.contact section{display:block !important}
+.contact-table{display:table;width:100%;max-width:26rem;margin:0 auto}
+.contact-table-row{display:table-row}
+.contact-table .col-text,.contact-table .col-icons{display:table-cell;vertical-align:middle}
+.contact-table .col-text{text-align:right;width:70%}
+.contact-table .col-icons{text-align:left;width:30%}
+.contact-unified p{margin:0 0 .5rem;font-size:1.15rem}
+.contact-unified p:last-child{margin-bottom:0}
+.contact-unified strong{color:#d98b19;margin-inline-end:.4em}
+.social-row{display:flex !important;gap:1rem;justify-content:flex-start}
+.social-row a{width:2.75rem;height:2.75rem;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff !important;font-size:1.2rem;text-decoration:none;transition:transform .15s}
+.social-row a:hover{transform:translateY(-3px)}
+.social-row a.li{background:#0077b5}
+.social-row a.fb{background:#1877f2}
+.social-row a.wa{background:#25d366}
+body{background:linear-gradient(180deg,#4a3c30 0%,#6b5138 55%,#8a6a45 100%)}
+</style>
   </head>
   <body class="is-preload">
     <!-- Wrapper -->
@@ -29,7 +48,7 @@
       <!-- Nav -->
       <nav id="nav">
         <ul class="links">
-          <li class="active"><a href="#about">אודות</a></li>
+          <li class="active"><a href="#about">Author Bio</a></li>
           <li><a href="#publications">פרסומים</a></li>
           <li><a href="#novel">נובלה גרפית</a></li>
           <li><a href="english.html">אנגלית</a></li>
@@ -43,7 +62,7 @@
         <!-- About -->
         <section class="post" id="about">
           <header class="major">
-            <span class="date"><h2>אודות</h2></span>
+            <span class="date"><h2>Author Bio</h2></span>
             <h3>About Me</h3>
           </header>
           <p dir="ltr" style="text-align: left;">
@@ -298,16 +317,21 @@
       <footer id="footer">
         <section class="split contact">
           <section>
-            <h3>טלפון</h3>
-            <p><a href="tel:0528335872">052-8335872</a></p>
-          </section>
-          <section>
-            <h3>אימייל</h3>
-            <p>
-              <a href="mailto:meirav.seifert@gmail.com"
-                >meirav.seifert@gmail.com</a
-              >
-            </p>
+            <div class="contact-table">
+              <div class="contact-table-row">
+                <div class="col-text contact-unified">
+                  <p><strong>טלפון</strong> 052-8335872</p>
+                  <p><strong>אימייל</strong> meirav.seifert@gmail.com</p>
+                </div>
+                <div class="col-icons">
+                  <div class="social-row">
+                    <a href="https://wa.me/972528335872" target="_blank" rel="noopener" class="wa" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/the.english.coach.tel.aviv/" target="_blank" rel="noopener" class="fb" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/meiravseifert/" target="_blank" rel="noopener" class="li" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </section>
         </section>
         <section>
